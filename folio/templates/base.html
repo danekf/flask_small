@@ -1,6 +1,11 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Css -->
+    <link rel="stylesheet" type = "text/css" href="{% static 'css/base.css' %}">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,6 +52,7 @@
   </nav>
 
   <!-- Main Content  -->
+  <h1>Hello</h1>
     <div class="container">
       {% block content %}
       {% endblock %}
