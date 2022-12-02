@@ -1,13 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
 {% block content %}
 <link rel="stylesheet" type = "text/css" href="{% static 'css/twitch.css' %}">
+<!-- Load the Twitch embed JavaScript file -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
 
 <!-- Everything goes into the block -->
 <div class="block">
-  <h1>Twitch Page</h1>
+  <h1>KD forever twitch page</h1>
+  <div class='description'>This is the KD together twitch page which features both myself and my fiancé Kiri.</div>
+
+  <!-- Add a placeholder for the Twitch embed -->
+  <div id="twitch-embed"></div>
+  
+<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: 1280,
+    height: 720,
+    channel: "kd_together",
+    // Only needed if this page is going to be embedded on other websites
+    parent: ["embed.example.com", "othersite.example.com"]
+  });
+</script>
 
 </div>
 {% endblock %}
