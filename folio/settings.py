@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home.apps.HomeConfig'
+    'home.apps.HomeConfig',
+    'pizza.apps.PizzaConfig',
+    'twitch.apps.TwitchConfig',
 ]
 
 MIDDLEWARE = [
