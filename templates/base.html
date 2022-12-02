@@ -18,13 +18,26 @@
     <title>Danek</title>
   </head>
   <body>
-  {% include '__menu.html' %}
+    
+    <!-- Flex Box -->
+    <div class="box">
 
-  <!-- Main Content  -->
-    <div class="container-fluid">
-      {% block content %}
-      {% endblock %}
+      <!-- Menu Bar -->
+      <div class="menu">
+        {% include '__menu.html' %}
+      </div>
+
+      <!-- Main Content to fill rest-->
+      <div class="content">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        Nananana Footer
+      </div>
+
     </div>
-
   </body>
 </html>
