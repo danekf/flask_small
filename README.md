@@ -14,3 +14,6 @@ Space Cadet : 2E294E
 Persian Green : 1b998B
 
 June Bud : C5D86D
+
+
+light gray : D3D3D3
