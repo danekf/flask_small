@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
+
 
 {% block content %}
-  <h1>Pizza Stuff!</h1>
+<link rel="stylesheet" type = "text/css" href="{% static 'css/pizza.css' %}">
+
+<!-- Everything goes into the block -->
+<div class="block">
+  <h1>Pizza Stuff</h1>
+
+</div>
 {% endblock %}
