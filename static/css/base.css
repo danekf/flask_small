@@ -20,7 +20,11 @@
 }
 
 .content {
-  flex: 1 1 auto; 
+  flex: 1 1 auto;   
+}
+
+.pad-left {
+  padding-left: 1vw;
 }
 
 .footer {
