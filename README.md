@@ -1,7 +1,10 @@
 Python v 3.10.7
+Pymongo v 4.3.3
+dnspython v 2.2.1
+virtualenv v 20.17.1
 
 
-#Colour Palette
+# Colour Palette
 
 <img src = "References/palette.png" alt="https://coolors.co/d7263d-f46036-2e294e-1b998b-c5d86d" width="70%" >
 
@@ -17,3 +20,8 @@ June Bud : C5D86D
 
 
 light gray : D3D3D3
+
+
+# Command reminders (for the new)
+## Connecting to virtual env
+source envFolio/bin/activate
