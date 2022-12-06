@@ -8,7 +8,7 @@ import dotenv
 
 dotenv.read_dotenv()
 DB_USERNAME = os.environ.get('DB_USERNAME')
-DB_PASSWORD = os.environ.get('DB_DB_PASSWORD')
+DB_PASSWORD = os.environ.get('DB_PASSWORD')
 print(DB_USERNAME, DB_PASSWORD)
 
 
