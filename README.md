@@ -1,14 +1,11 @@
+# Requirements
 Python v 3.10.7
 Pymongo v 4.3.3
 dnspython v 2.2.1
-django-environ v 0.9.0 (for env file use)
-
-# env file use
-
-pip install django-environ to install
-
-#
 virtualenv v 20.17.1
+
+django-dotenv v 0.9.0 (for env file use)
+
 
 # Colour Palette
 
