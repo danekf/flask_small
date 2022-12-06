@@ -2,6 +2,7 @@ Python v 3.10.7
 Pymongo v 4.3.3
 dnspython v 2.2.1
 virtualenv v 20.17.1
+python-dotenv
 
 
 # Colour Palette
