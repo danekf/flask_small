@@ -11,7 +11,7 @@ dotenv.read_dotenv()
 #set variables from env
 DB_CONNECTION_STRING = str(os.environ.get('DB_CONNECTION_STRING'))
 
-def hello():
+def utils_message():
    print('hello')
 
 

@@ -2,4 +2,4 @@
 
 import folio.utils as app
 
-app.hello()
+app.utils_message()
