@@ -10,8 +10,9 @@ def index(req):
   #render index.html as main home page
   message = db.db_message()
   
-  # get test database
-  entry = db.get_data()
+  # get sample database
+  entry = db.get_data('sample_mflix', 'comments')
+  
   
   
   

@@ -37,11 +37,11 @@ def insert_name(db_name, name):
    col.insert_one(entry)
    
    
-def get_data():
+def get_data(db_name, db_collection):
    #get data from sample
-   db = client['sample_mflix']
+   db = client[db_name]
    #collection is comments
-   col = db['comments']
+   col = db[db_collection]
    #get first entry
    x = col.find_one()
    
