@@ -12,8 +12,9 @@ dotenv.read_dotenv()
 DB_CONNECTION_STRING = str(os.environ.get('DB_CONNECTION_STRING'))
 
 def utils_message():
-   print('hello')
-
+   message = 'hello'
+   print(message)
+   return message
 
 def get_database(): 
  
