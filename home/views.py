@@ -1,14 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from folio.utils import utils_message
+from folio.db import db
 
 
 # Create your views here.
 
 def index(req):
   #render index.html as main home page
-  message = utils_message()
+  message = db_message()
+  
+  db.get_database()
   
   context = {
     'message': message
