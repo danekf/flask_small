@@ -23,18 +23,20 @@ def get_database(db_name):
    return client[db_name]
 
 
-def insert_name(db_name, name):   
+def insert_into(db_name, collection, data):   
    #define db
    db = client[db_name]
    
    #define collection in db to insert to
-   col = db['users']
+   col = db[collection]
    
    #define entry itself
-   entry = {'name': name}
+   entry = {'name': data}
    
    #insert one entry into defined column, use insert_many for many entries in an array
    col.insert_one(entry)
+   
+   return (col.find_one())
    
    
 def get_data(db_name, db_collection):
@@ -42,6 +44,7 @@ def get_data(db_name, db_collection):
    db = client[db_name]
    #collection is comments
    col = db[db_collection]
+   
    #get first entry
    x = col.find_one()
    

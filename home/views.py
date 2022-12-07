@@ -13,14 +13,16 @@ def index(req):
   # get sample database
   entry = db.get_data('sample_mflix', 'comments')
   
-  
-  
+  #insert into test database
+  insert = db.insert_into('testDb', 'folio', 'Danek')
   
   context = {
     'message': message,
-    'entry': entry
+    'entry': entry,
+    'insert': insert
   }
   
   return render(req,
-                'index.html', context)  
+                'index.html',  
+                context)  
   
